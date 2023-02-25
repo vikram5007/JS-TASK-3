@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label> ENTER YOUR NAME : </label>
+    <input type="text" name="pname"><br>
+    <label> ENTER YOUR AGE : </label>
+    <input type="text" name="age"><br>
+    <label> ENTER YOUR GENDER : </label>
+    <input type="text" name="gen"><br>
+    <label> ENTER YOUR ADDRESS : </label>
+    <input type="text" name="add"><br>
+    <button type="button" onclick="printer()"> CLICK HERE </button>
+
+
+
+    <script>
+
+        function printer() {
+
+
+            
+
+            function person(name, age, gender, address) {
+                this.id = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+            
+            }
+            e = new person("vikram", 21, "male", "gd colony");
+           document.write(e.id+" "+e.age+" "+e.gender+" "+e.address);
+        
+    }
+</script>
+
+</body>
+</html>
